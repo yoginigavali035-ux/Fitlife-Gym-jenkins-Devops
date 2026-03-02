@@ -5,7 +5,7 @@ pipeline {
         SSH_CREDENTIALS = 'wordpress-app-key'   // Jenkins SSH credential ID
         SERVER_IP = '172.31.19.16'
         REMOTE_USER = 'ubuntu'
-        DEPLOY_DIR = '/home/ubuntu/fitnessgym'
+        DEPLOY_DIR = '/var/www/html'
     }
 
     stages {
