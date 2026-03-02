@@ -1,28 +1,20 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
 body {
+    margin: 0;
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
+    text-align: center;
 }
 
-/* Header */
 header {
     background: #111;
     color: white;
-    padding: 15px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin-left: 20px;
+    margin: 0 15px;
     font-weight: bold;
 }
 
@@ -30,48 +22,25 @@ nav a:hover {
     color: #ff4d4d;
 }
 
-/* Hero Section */
 .hero {
-    background: linear-gradient(to right, #000000, #434343);
+    background: #333;
     color: white;
-    text-align: center;
-    padding: 80px 20px;
-}
-
-.hero h1 {
-    font-size: 48px;
-}
-
-.hero p {
-    margin: 20px 0;
-    font-size: 20px;
+    padding: 60px 20px;
 }
 
 .hero button {
-    padding: 12px 25px;
+    padding: 10px 20px;
     background: #ff4d4d;
-    color: white;
     border: none;
+    color: white;
     cursor: pointer;
-    border-radius: 5px;
 }
 
-.hero button:hover {
-    background: #e60000;
+.content {
+    padding: 40px 20px;
 }
 
-/* About Section */
-.about {
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.about h2 {
-    margin-bottom: 40px;
-    color: #333;
-}
-
-.cards {
+.card-container {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -81,29 +50,18 @@ nav a:hover {
 .card {
     background: white;
     padding: 20px;
+    width: 200px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+form input, form textarea {
     width: 250px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 8px;
 }
 
-/* Membership */
-.membership {
-    background: #ff4d4d;
-    color: white;
-    text-align: center;
-    padding: 50px 20px;
-}
-
-/* Contact */
-.contact {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-/* Footer */
 footer {
     background: #111;
     color: white;
-    text-align: center;
     padding: 15px;
+    margin-top: 30px;
 }
