@@ -2,10 +2,10 @@ pipeline {
     agent any
 
     environment {
-        SSH_CREDENTIALS = 'server-ssh-key'   // Jenkins SSH credential ID
+        SSH_CREDENTIALS = 'wordpress-app-key'   // Jenkins SSH credential ID
         SERVER_IP = '172.31.19.16'
         REMOTE_USER = 'ubuntu'
-        DEPLOY_DIR = '/var/www/html'
+        DEPLOY_DIR = '/home/ubuntu/fitnessgym'
     }
 
     stages {
